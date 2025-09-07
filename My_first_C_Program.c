@@ -14,6 +14,7 @@ int main(){
         printf("Enter a number: ");
     if (scanf("%d", &num1) != 1) {
         printf("Please enter a valid number.\n");
+        return 1;
     }
     
     printf("Enter an operator: ");
@@ -27,6 +28,7 @@ int main(){
     printf("Enter a number: ");
     if(scanf("%d", &num2) != 1){
         printf("Please enter a valid number.\n");
+        return 1;
     }
     
     if (op == '+')
