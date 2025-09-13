@@ -6,13 +6,13 @@
 
 int main(){
    
-    int num1;
-    int num2;
+    double num1;
+    double num2;
     char op;
 
 
         printf("Enter a number: ");
-    if (scanf("%d", &num1) != 1) {
+    if (scanf("%lf", &num1) != 1) {
         printf("Please enter a valid number.\n");
         return 1;
     }
@@ -26,26 +26,30 @@ int main(){
     }
     
     printf("Enter a number: ");
-    if(scanf("%d", &num2) != 1){
+    if(scanf("%lf", &num2) != 1){
         printf("Please enter a valid number.\n");
         return 1;
     }
     
     if (op == '+')
     {
-        printf("%d\n", num1 + num2);
+        printf("%lf\n", num1 + num2);
     }
     else if (op == '-')
     {
-        printf("%d\n", num1 - num2);
+        printf("%lf\n", num1 - num2);
+    }
+    else if (op == '/' && op == 0)
+    {
+        printf("Please enter valid divisor.\n");
     }
     else if (op == '/')
     {
-        printf("%d\n", num1 / num2);
+        printf("%lf\n", num1 / num2);
     }
     else if (op == '*')
     {
-        printf("%d\n", num1 * num2);
+        printf("%lf\n", num1 * num2);
     }
 
 }
