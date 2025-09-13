@@ -39,7 +39,7 @@ int main(){
     {
         printf("%lf\n", num1 - num2);
     }
-    else if (op == '/' && op == 0)
+    else if (op == '/' && num2 == 0)
     {
         printf("Please enter valid divisor.\n");
     }
